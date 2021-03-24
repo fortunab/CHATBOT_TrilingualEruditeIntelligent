@@ -1,0 +1,6 @@
+flask
+sklearn
+nltk
+chatterbot
+gunicorn
+PyYaml
