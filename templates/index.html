@@ -4,11 +4,11 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href="/static/style.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link href="/static/bootstrap.min.css" rel="stylesheet" />
 
     <link rel="icon" type="image/png" href="/static/media/refbot.jpg">
-    <title>XAI Virtual Assistant</title>
+    <title>XAIBOT</title>
 
     <style>
         .userText {
@@ -724,7 +724,7 @@ tr:nth-child(even) {
 
                     }, 4000);
                     $("#chatbox").append(botHtml);
-                    var noubtnn = '<button onclick="discutie_ref1()()">Send</button>';
+                    var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
                     $("#userInput5").append(noubtnn);
                 });
             }
@@ -817,11 +817,21 @@ tr:nth-child(even) {
 
             $.get("/detectare", {msg: rawText}).done(function (data) {
                 var botHtml = '<p class="botText"><img src="static/media/chatbot.ico" width="40" height="30"><span>' + 'XAIBOT: ' + data + '</span></p>';
+
                 $("#chatbox").append(botHtml);
             });
+            var div1 = document.getElementById("userInput6");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
 
+            var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
+            $("#userInput6").append(noubtnn);
             if (rawText.toLowerCase().localeCompare("q")==0){
-
 
                 var div1 = document.getElementById("userInput5");
                 div1.style.display = "block";

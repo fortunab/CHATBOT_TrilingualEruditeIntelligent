@@ -724,7 +724,7 @@ tr:nth-child(even) {
 
                     }, 4000);
                     $("#chatbox").append(botHtml);
-                    var noubtnn = '<button onclick="discutie_ref1()()">Trimite</button>';
+                    var noubtnn = '<button onclick="discutie_ref1()">Trimite</button>';
                     $("#userInput5").append(noubtnn);
                 });
             }
@@ -807,21 +807,29 @@ tr:nth-child(even) {
         }
 
         function discutie_ref1() {
-             var datatimp = new Date();
-              var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
-              $("#chatbox").append(variab);
+            var datatimp = new Date();
+            var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
+            $("#chatbox").append(variab);
             var rawText = $("#textInput").val();
             var userHtml = '<p class="userText"><span>' + 'TU: ' + rawText ;
             $("#textInput").val("");
             $("#chatbox").append(userHtml);
-
             $.get("/detect", {msg: rawText}).done(function (data) {
                 var botHtml = '<p class="botText"><img src="static/media/chatbot.ico" width="40" height="30"><span>' + 'XAIBOT: ' + data + '</span></p>';
                 $("#chatbox").append(botHtml);
             });
+            var div1 = document.getElementById("userInput6");
+                div1.style.display = "block";
+                  if (div1.style.display !== "none") {
+                      div1.style.display = "none";
+                  }
+                  else {
+                      div1.style.display = "block";
+                  }
 
+            var noubtnn = '<button onclick="discutie_ref1()">Trimite</button>';
+            $("#userInput6").append(noubtnn);
             if (rawText.toLowerCase().localeCompare("q")==0){
-
 
                 var div1 = document.getElementById("userInput5");
                 div1.style.display = "block";
@@ -841,7 +849,7 @@ tr:nth-child(even) {
                       div1.style.display = "block";
                   }
             }
-        }
+	    }
       </script>
     </div>
     </div>
