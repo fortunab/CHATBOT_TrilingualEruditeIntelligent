@@ -18,6 +18,104 @@ categories:
 - emotion
 
 conversations:
+- - LIME
+  - LIME is model-agnostic, meaning that it can be applied to any machine learning model.
+  - Model-specific approaches aim to understand the black model machine learning model by analysing the internal components and how they interact.
+  - In deep learning models, it is e.g. possible to investigate activation units and to link internal activations back to the input.
+  - This requires a thorough understanding of the network and doesn’t scale to other models.
+- - What is LIME?
+  - The technique attempts to understand the model by perturbing the input of data samples and understanding how the predictions change.
+- - SHAP
+  - SHAP stands for SHapley Additive exPlanations.
+  - In effect it means that the prediction made by the model is calculated for all the subsets with and without the feature and summed to get the Shapley value for that feature.
+  - Applying the Shapley’s properties of fairness from the game theory to explainable AI, the below comparison can be derived.
+- - frameworks
+  - There are many XAI frameworks available amongst which LIME & SHAP are the popular ones.
+- - Shapley Values
+  - The Shapley value is a solution concept in the cooperative game theory.
+- - Neural Graph Learning
+  - Label propagation is a powerful and flexible semi-supervised learning technique on graphs.
+  - Neural networks, on the other hand, have proven track records in many supervised learning tasks.
+  - I propose a training framework with a graph-regularized objective, namely Neural Graph Machines, that can combine the power of neural networks and label propagation.
+  - Enabling it to be applied to multiple neural architectures (Feed-forward NNs, CNNs and LSTM RNNs)
+- - What is Graph Neural Network?
+  - Graph Neural Network (GNN) has gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science.
+  - The power of GNN in modeling the dependencies between nodes in a graph enables the breakthrough in the research area related to graph analysis.
+  - Let’s first understand what is Graph.
+- - What is Graph?
+  - A graph is a data structure consisting of two components, vertices and edges.
+- - What is GNN?
+  - Graph Neural Network is a type of Neural Network which directly operates on the Graph structure.
+- - GNN
+  - A typical application of GNN is node classification. Essentially, every node in the graph is associated with a label, and we want to predict the label of the nodes without ground-truth.
+- - CML
+  - Let's subsume learning approaches that efficiently combine human intelligence with the machine’s ability of rapid computation under the term Cooperative Machine Learning (CML).
+  - An active learning module then decides which parts of the prediction are subject to manual revision by human annotators.
+  - I propose a novel two-step CML strategy, as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
+- - explainable cooperative machine learning
+  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
+  - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training.
+  - Results show that the proposed strategy significantly reduces manual coding efforts.
+  - I introduce an open-source tool for collaborative and machine-aided labelling (NOVA). A walk-through is presented to demonstrate the collaborative annotating capability of the system.
+  - AI techniques may extend the proposed Cooperative Machine Learning workflow, to not only speed up the process, but to also give better understanding to users of such a system how well their model performs and why it fails or succeeds.
+- - explainable cooperative ML
+  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
+  - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training.
+  - Results show that the proposed strategy significantly reduces manual coding efforts.
+  - I introduce an open-source tool for collaborative and machine-aided labelling (NOVA). A walk-through is presented to demonstrate the collaborative annotating capability of the system.
+  - AI techniques may extend the proposed Cooperative Machine Learning workflow, to not only speed up the process, but to also give better understanding to users of such a system how well their model performs and why it fails or succeeds.
+- - what is explainable cooperative machine learning?
+  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
+  - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training.
+  - Results show that the proposed strategy significantly reduces manual coding efforts.
+  - I introduce an open-source tool for collaborative and machine-aided labelling (NOVA). A walk-through is presented to demonstrate the collaborative annotating capability of the system.
+  - AI techniques may extend the proposed Cooperative Machine Learning workflow, to not only speed up the process, but to also give better understanding to users of such a system how well their model performs and why it fails or succeeds.
+- - Fooling LIME and SHAP
+  - As machine learning black boxes are increasingly being deployed in domains such as healthcare and criminal justice, there is growing emphasis on building tools and techniques for explaining these black boxes in an interpretable manner
+  - I propose a novel scaffolding technique that effectively hides the biases of any given classifier by allowing an adversarial entity to craft an arbitrary desired explanation.
+- - Model Cards for Model Reporting
+  - Model cards for Model Reporting are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions. More information (https://arxiv.org/pdf/1810.03993.pdf)
+- - Model cards
+  - Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions.
+- - Model reporting
+  - Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions.
+- - What are model cards?
+  - Model cards are short documents accompanying trained machine learning models that provide benchmarked evaluation in a variety of conditions.
+- - GUIDE TO INTERPRETABLE MACHINE LEARNING
+  - After exploring the concepts of interpretability, you will learn about simple, interpretable models such as decision trees, decision rules and linear regression. Solution can be found (https://www.topbots.com/interpretable-machine-learning/)
+  - Focus on general model-agnostic methods for interpreting black box models like feature importance and accumulated local effects and explaining individual predictions with Shapley values and LIME.
+- - Beyond XAI
+  - Solution/answer can be found (https://www.ayasdi.com/beyond-explainability-ai-transparency/)
+- - Interpretable machine learning
+  - After exploring the concepts of interpretability, you will learn about simple, interpretable models such as decision trees, decision rules and linear regression.
+  - Focus on general model-agnostic methods for interpreting black box models like feature importance and accumulated local effects and explaining individual predictions with Shapley values and LIME.
+- - Explainability vs Interpretability
+  - Interpretability is about the extent to which a cause and effect can be observed within a system. Explainability, meanwhile, is the extent to which the internal mechanics of a machine or deep learning system can be explained in human terms. More information (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Interpretability vs Explainability
+  - Interpretability is about the extent to which a cause and effect can be observed within a system. Explainability, meanwhile, is the extent to which the internal mechanics of a machine or deep learning system can be explained in human terms. More information (https://bdtechtalks.com/2020/07/27/black-box-ai-models/)
+- - Explainable anatomical shape
+  - Quantification of anatomical shape changes currently relies on scalar global indexes which are largely insensitive to regional or asymmetric modifications. More information (https://arxiv.org/abs/1907.00058)
+  - Accurate assessment of pathology-driven anatomical remodeling is a crucial step for the diagnosis and treatment of many conditions. More information (https://arxiv.org/abs/1907.00058)
+  - Deep learning approaches have recently achieved wide success in the analysis of medical images, but they lack interpretability in the feature extraction and decision processes. More information (https://arxiv.org/abs/1907.00058)
+  - In this work, we propose a new interpretable deep learning model for shape analysis. In particular, we exploit deep generative networks to model a population of anatomical segmentations through a hierarchy of conditional latent variables. More information (https://arxiv.org/abs/1907.00058)
+- - Interpretable policy derivation for reinforcement learning based on evolutionary feature synthesis
+  - Reinforcement learning based on the deep neural network has attracted much attention and has been widely used in real-world applications. However, the black-box property limits its usage from applying in high-stake areas, such as manufacture and healthcare. To deal with this problem, some researchers resort to the interpretable control policy generation algorithm. The basic idea is to use an interpretable model, such as tree-based genetic programming, to extract policy from other black box modes, such as neural networks. (https://link.springer.com/article/10.1007/s40747-020-00175-y)
+- - Self-explaining AI
+  - Self-explaining AIs are capable of providing a human-understandable explanation of each decision along with confidence levels for both the decision and explanation.
+- - Evolution of Classifier Confusion on the Instance Level
+  - The increasing complexity of models has led to a growing demand for model interpretability through visualizations. Existing approaches mostly focus on the visual analysis of the final model performance after training and are often limited to aggregate performance measures.
+- - Deep meta-learning XAI
+  - These deep learning methods can yield highly effective results according to the data set size, data set quality, the methods used in feature extraction, the hyper parameter set used in deep learning models, the activation functions, and the optimization algorithms. However, there are important shortcomings that current deep learning models are currently inadequate.
+- - Explaining Deep Neural Networks using Unsupervised Clustering
+  - (https://arxiv.org/pdf/2007.07477.pdf) is one book about it!
+- - Interactive Studio for Explanatory Model Analysis
+  - Automate the explanatory analysis of machine learning predictive models. Generate advanced interactive model explanations in the form of a serverless HTML site with only one line of code. This tool is model agnostic, therefore compatible with most of the black box predictive models and frameworks.
+- - Automated Reasoning for Explainable AI
+  - Reasoning and learning have been considered fundamental features of intelligence ever since the dawn of the field of artificial intelligence, leading to the development of the research areas of automated reasoning and machine learning. This short paper is a non-technical position statement that aims at prompting a discussion of the relationship between automated reasoning and machine learning, and more generally between automated reasoning and artificial intelligence. We suggest that the emergence of the new paradigm of XAI, that stands for eXplainable Artificial Intelligence, is an opportunity for rethinking these relationships, and that XAI may offer a grand challenge for future research on automated reasoning.
+- - Robust Decision Trees against adversarial
+  - Although adversarial examples and model robustness have been extensively studied in the context of linear models and neural networks, research on this issue in tree-based models and how to make tree-based models robust against adversarial examples is still limited.
+
+
 - - What is AI?
   - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
 - - What is AI?
@@ -801,7 +899,7 @@ conversations:
 - - The Celtic Shelf, the seabed under the Celtic Sea is a part of the continental
     shelf of what continent?
   - Europe
-- - Dolphins use a sense, similar to sonar, to determine the location and shape of
+- - Dolphins use a sense, similar to sonar, to determine the location and form of
     nearby items.
   - Echolocation
 - - have you read the communist
