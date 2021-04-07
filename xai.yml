@@ -19,24 +19,24 @@ categories:
 
 conversations:
 - - LIME
-  - LIME is model-agnostic, meaning that it can be applied to any machine learning model.
-  - Model-specific approaches aim to understand the black model machine learning model by analysing the internal components and how they interact.
-  - In deep learning models, it is e.g. possible to investigate activation units and to link internal activations back to the input.
-  - This requires a thorough understanding of the network and doesn’t scale to other models.
+  - LIME is model-agnostic, meaning that it can be applied to any machine learning model. More details (https://arxiv.org/abs/1911.02508)
+  - Model-specific approaches aim to understand the black model machine learning model by analysing the internal components and how they interact. More details (https://arxiv.org/abs/1911.02508)
+  - In deep learning models, it is e.g. possible to investigate activation units and to link internal activations back to the input. More details (https://arxiv.org/abs/1911.02508)
+  - This requires a thorough understanding of the network and doesn’t scale to other models. More details (https://arxiv.org/abs/1911.02508)
 - - What is LIME?
-  - The technique attempts to understand the model by perturbing the input of data samples and understanding how the predictions change.
+  - The technique attempts to understand the model by perturbing the input of data samples and understanding how the predictions change. More details (https://arxiv.org/abs/1911.02508)
 - - SHAP
-  - SHAP stands for SHapley Additive exPlanations.
+  - SHAP stands for SHapley Additive exPlanations. More details (https://arxiv.org/abs/1911.02508)
   - In effect it means that the prediction made by the model is calculated for all the subsets with and without the feature and summed to get the Shapley value for that feature.
-  - Applying the Shapley’s properties of fairness from the game theory to explainable AI, the below comparison can be derived.
+  - Applying the Shapley’s properties of fairness from the game theory to explainable AI, the below comparison can be derived. More details (https://arxiv.org/abs/1911.02508)
 - - frameworks
   - There are many XAI frameworks available amongst which LIME & SHAP are the popular ones.
 - - Shapley Values
   - The Shapley value is a solution concept in the cooperative game theory.
 - - Neural Graph Learning
-  - Label propagation is a powerful and flexible semi-supervised learning technique on graphs.
-  - Neural networks, on the other hand, have proven track records in many supervised learning tasks.
-  - I propose a training framework with a graph-regularized objective, namely Neural Graph Machines, that can combine the power of neural networks and label propagation.
+  - Label propagation is a powerful and flexible semi-supervised learning technique on graphs. More details (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Neural networks, on the other hand, have proven track records in many supervised learning tasks. More information (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - I propose a training framework with a graph-regularized objective, namely Neural Graph Machines, that can combine the power of neural networks and label propagation. More information (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
   - Enabling it to be applied to multiple neural architectures (Feed-forward NNs, CNNs and LSTM RNNs)
 - - What is Graph Neural Network?
   - Graph Neural Network (GNN) has gained increasing popularity in various domains, including social network, knowledge graph, recommender system, and even life science.
@@ -53,13 +53,13 @@ conversations:
   - An active learning module then decides which parts of the prediction are subject to manual revision by human annotators.
   - I propose a novel two-step CML strategy, as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
 - - explainable cooperative machine learning
-  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
-  - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training.
+  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted. More details (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training. More details (https://link.springer.com/article/10.1007/s13218-020-00632-3)
   - Results show that the proposed strategy significantly reduces manual coding efforts.
   - I introduce an open-source tool for collaborative and machine-aided labelling (NOVA). A walk-through is presented to demonstrate the collaborative annotating capability of the system.
   - AI techniques may extend the proposed Cooperative Machine Learning workflow, to not only speed up the process, but to also give better understanding to users of such a system how well their model performs and why it fails or succeeds.
 - - explainable cooperative ML
-  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted.
+  - I propose a novel two-step CML strategy - as long as only few labelled instances are available the system is applied to local fractions of the database. Later, as more labelled instances become available, larger parts can be predicted. More details (https://link.springer.com/article/10.1007/s13218-020-00632-3)
   - I evaluate the proposed strategy on an audio-based annotation task by simulating the incremental injection of additional information during training.
   - Results show that the proposed strategy significantly reduces manual coding efforts.
   - I introduce an open-source tool for collaborative and machine-aided labelling (NOVA). A walk-through is presented to demonstrate the collaborative annotating capability of the system.
@@ -114,8 +114,85 @@ conversations:
   - Reasoning and learning have been considered fundamental features of intelligence ever since the dawn of the field of artificial intelligence, leading to the development of the research areas of automated reasoning and machine learning. This short paper is a non-technical position statement that aims at prompting a discussion of the relationship between automated reasoning and machine learning, and more generally between automated reasoning and artificial intelligence. We suggest that the emergence of the new paradigm of XAI, that stands for eXplainable Artificial Intelligence, is an opportunity for rethinking these relationships, and that XAI may offer a grand challenge for future research on automated reasoning.
 - - Robust Decision Trees against adversarial
   - Although adversarial examples and model robustness have been extensively studied in the context of linear models and neural networks, research on this issue in tree-based models and how to make tree-based models robust against adversarial examples is still limited.
-
-
+- - Robust Decision Tree
+  - we show that tree based models are also vulnerable to adversarial examples and develop a novel algorithm to learn robust trees. More information (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_36)
+- - Yellowbrick directly from Scikit
+  - Yellowbrick extends the Scikit-Learn API to make model selection and hyperparameter tuning easier. More information (https://www.scikit-yb.org/en/latest/)
+- - Levels of XAI framework
+  - Level 1 - XAI for Perception. Level 1 XAI includes explanations about what an AI system did or is doing as well as the decisions made by the system. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Level 2 - XAI for Comprehension. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Level 3 - XAI for Projection. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+- - Decision Theory Meets Explainable AI
+  - CIU extends the notions of importance and utility for the non-linear models of AI systems and notably those produced by Machine Learning methods. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+  - Agents without explanation, and explainable agents using two different algorithms... More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - CIU
+  - CIU extends the notions of importance and utility for the non-linear models of AI systems and notably those produced by Machine Learning methods. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - HAP
+  - CIU extends the notions of importance and utility for the non-linear models of AI systems and notably those produced by Machine Learning methods. More information (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - ExplainX.ai
+  - ExplainX is a model explainability/interpretability framework for data scientists and business users. More information (https://github.com/explainX/explainx)
+- - ExplainX
+  - ExplainX is a model explainability/interpretability framework for data scientists and business users. (https://github.com/explainX/explainx)
+- - Explainable 3D Convolutional Neural Networks by Learning Temporal Transformations
+  - We demonstrate that 3TConv learns temporal transformations that afford a direct interpretation. The temporal parameters can be used! More information (https://deepai.org/publication/explainable-3d-convolutional-neural-networks-by-learning-temporal-transformations)
+- - XAI package DALEX
+  - The DALEX package xrays any model and helps to explore and explain its behaviour, helps to understand how complex models are working. More information (https://github.com/ModelOriented/DALEX)
+- - AIMLAI
+  - AIMLAI envisions to become a discussion venue for the advent of novel interpretable algorithms and explainability modules that mediate the communication. More info (https://project.inria.fr/aimlai/)
+- - CONSAC
+  - Applications include finding multiple vanishing points in man-made scenes, fitting planes to architectural imagery, or estimating multiple rigid motions within the same sequence. More info (https://arxiv.org/abs/2001.02643)
+- - Robust Multi-Model Fitting by Conditional Sample Consensus
+  - Applications include finding multiple vanishing points in man-made scenes, fitting planes to architectural imagery, or estimating multiple rigid motions within the same sequence. (https://arxiv.org/abs/2001.02643)
+- - The four dimensions of contestable AI diagnostics
+  - The use of personal health data in AI diagnostics.
+  - The potential bias of AI diagnostics.
+  - The performance of AI diagnostics.
+  - The organisation and division of diagnostic labour.
+- - When explanations lie
+  - Deep Taylor Decomposition, Layer-wise Relevance Propagation, Excitation BP, PatternAttribution, DeepLIFT, Deconv, RectGrad, and Guided BP. More details (https://arxiv.org/abs/1912.09818)
+- - Attack to Explain Deep Representation
+  - Deep visual models are susceptible to extremely low magnitude perturbations to input images. Though carefully crafted, the perturbation patterns generally appear noisy, yet they are able to perform controlled manipulation of model predictions. More details (https://openaccess.thecvf.com/content_CVPR_2020/papers/Jalwana_Attack_to_Explain_Deep_Representation_CVPR_2020_paper.pdf)
+- - Funny title from Google
+  - Neural Networks Are More Productive Teachers Than Human Raters
+  - Active Mixup for Data-Efficient Knowledge Distillation from a Blackbox Model
+- - InterpretML from Microsoft
+  - InterpretML includes a new interpretability algorithm—the Explainable Boosting Machine, which is a highly intelligible and explainable. More details of implementation (https://github.com/interpretml/interpret)
+- - SK-MOEFS
+  - A Library in Python for Designing Accurate and Explainable Fuzzy Models. More details (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+  - SKMoefs is a Python module for machine learning specifically built for Multi-Objective Evolutionary Fuzzy Systems. More details (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+- - XAI research job in Rome
+  - It is necessary to enhance XAI research by incorporating models of how people understand explanations. Read more about the research in Rome (https://euraxess.ec.europa.eu/jobs/527048)
+- - InnoCentive Challenge Center
+  - I will give you a hyperlink for this! Click (https://www.innocentive.com/ar/challenge/browse?categoryName=Biology)
+- - LIMEtree
+  - The Limetree NETWORK is a high-grade network player which can play back music from streaming services including ROON. More details (https://arxiv.org/pdf/2005.01427.pdf)
+- - Explainable AI Through Combination of Deep Tensor and Knowledge Graph
+  - One of the most significant advancements made in AI in recent years is the greatly enhanced accuracy of machine learning through deep learning. However, because deep learning deals with huge volumes of data and involves vast neural networks in the learning process, it is often difficult to explain how or why an output was reached even if the inference was correct. More details (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Deep Tensor
+  - Fujitsu Laboratories developed Deep Tensor, which learns from graph-structured data capable of describing complicated phenomena. More details (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Knowledge Graph
+  - The knowledge graph represents a collection of interlinked descriptions of entities – objects, events or concepts. More info (https://www.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+  - The Google Knowledge Graph is a knowledge base used by Google and its services to enhance its search engine's results with information gathered from a variety of sources.
+- - Master thesis in Quantifying the Performance of Explainability Algorithms
+  - I will provide you a hyperlink to read more about it! Please, click (https://uwspace.uwaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongQiu.pdf?sequence=5&isAllowed=y)
+- - XAI by Topological Hierarchical Decomposition
+  - A topological hierarchical decomposition (THD) is an algorithm for decomposing a dataset into smaller groups based on iterative applications. More details (https://math.osu.edu/events/topology-geometry-and-data-seminar-ryan-kramer) and (https://arxiv.org/abs/1811.10658)
+- - A very simple manner to image XAI related to the way our brain thinks
+  - A very simple manner to image XAI related to the way our brain thinks through Explainable Artificial Intelligence (xAI) Approaches and Deep Meta-Learning Models. More details (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - brain
+  - A very simple manner to image XAI related to the way our brain thinks through Explainable Artificial Intelligence (xAI) Approaches and Deep Meta-Learning Models. More details (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+- - XAI for COVID-19 classification
+  - Effectively and efficiently diagnosing COVID-19 patients with accurate clinical type is essential to achieve optimal outcomes of the patients as well as reducing the risk of overloading the healthcare system. Read more about it right (https://www.medrxiv.org/node/82227.external-links.html)
+- - More Python XAI tools
+  - PySS3 is a Python package that allows you to work with The SS3 Classification Model in a very straightforward, interactive and visual way. Rea more right (https://pyss3.readthedocs.io/en/latest/)
+- - XAI Critics
+  - You cand find some (https://medium.com/@rezakhorshidi/unpopular-opinions-on-explainable-ai-1st-out-of-n-which-explanation-6b24eef02b59)
+- - Interpreting Interpretability
+  - Understanding Data Scientists' Use of Interpretability Tools for Machine Learning. Harmanpreet Kaur, University of Michigan. That's an article. I suggest it to you!
+- - gshap
+  - A technique in explainable AI for answering broader questions in machine learning. More details (https://pypi.org/project/gshap/)
+- - Machine learning-based XAI
+  - The results of the solution can be understood by humans. It contrasts with the concept of the "black box" in machine learning where even its designers cannot explain why an AI arrived at a specific decision. More details (https://ieeexplore.ieee.org/document/9007737)
 - - What is AI?
   - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
 - - What is AI?
