@@ -18,6 +18,177 @@ categories:
 - emocija
 
 conversations:
+- - Model kartice za izveštavanje o modelima
+  - Karte modela za izveštavanje o modelima su kratki dokumenti koji prate obučene modele mašinskog učenja koji pružaju referentnu evaluaciju u različitim uslovima. Više informacija (https://arxiv.org/pdf/1810.03993.pdf)
+- - LIME
+  - LIME je agnostički prema modelu, što znači da se može primeniti na bilo koji model mašinskog učenja. Više detalja (https://arxiv.org/abs/1911.02508)
+  - Pristupi specifični za model imaju za cilj razumevanje crnog modela modela mašinskog učenja analizom unutrašnjih komponenti i njihovog međusobnog delovanja. Više detalja (https://arxiv.org/abs/1911.02508)
+  - U modelima dubokog učenja to je npr. moguće istražiti jedinice za aktiviranje i povezati unutrašnje aktivacije natrag na ulaz. Više detalja (https://arxiv.org/abs/1911.02508)
+  - Ovo zahteva temeljno razumevanje mreže i ne prilagođava se drugim modelima. Više detalja (https://arxiv.org/abs/1911.02508)
+- - Šta je LIME?
+  - Tehnika pokušava da razume model ometanjem unosa uzoraka podataka i razumevanjem kako se predviđanja menjaju. Više detalja (https://arxiv.org/abs/1911.02508)
+- - SHAP
+  - SHAP je skraćenica od SHaplei Additive ekPlanations. Više detalja (https://arxiv.org/abs/1911.02508)
+  - U stvari to znači da se predviđanje koje je napravio model izračunava za sve podskupove sa i bez obeležja i sumira da bi se dobila Shapleijeva vrednost za to svojstvo.
+  - Primenom Shapleijevih svojstava pravičnosti iz teorije igara na objašnjivu AI, može se izvesti poređenje u nastavku. Više detalja (https://arxiv.org/abs/1911.02508)
+- - okviri
+  - Postoji mnogo KSAI okvira među kojima su LIME & SHAP popularni.
+- Shaplei vrednosti
+  - Shaplei-jeva vrednost je koncept rešenja u teoriji kooperativne igre.
+- - Neurografsko učenje
+  - Proširivanje etiketa je moćna i fleksibilna polunadgledana tehnika učenja na grafikonima. Više detalja (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - S druge strane, neuronske mreže imaju dokazane rezultate u mnogim nadgledanim zadacima učenja. Više informacija (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Predlažem okvir za obuku sa grafski regulisanim ciljem, naime Neural Graph Machines, koji može kombinovati snagu neuronskih mreža i širenje etiketa. Više informacija (https://storage.googleapis.com/pub-tools-public-publication-data/pdf/bbd774a3c6f13f05bf754e09aa45e7aa6faa08a8.pdf)
+  - Omogućavanje da se primeni na više neuronskih arhitektura (NN-ovi sa povratnim protokom, CNN-ovi i LSTM RNN-ovi)
+- - Šta je grafička neuronska mreža?
+  - Grafička neuronska mreža (GNN) stekla je sve veću popularnost u raznim domenima, uključujući društvenu mrežu, grafikon znanja, sistem preporuka, pa čak i nauku o životu.
+  - Snaga GNN-a u modeliranju zavisnosti između čvorova u grafikonu omogućava proboj u istraživačkom području vezanom za analizu grafova.
+  - Prvo da shvatimo šta je Grafikon.
+- - Šta je Graf?
+  - Grafikon je struktura podataka koja se sastoji od dve komponente, temena i ivica.
+- - Šta je GNN?
+  - Grafička neuronska mreža je vrsta neuronske mreže koja direktno deluje na strukturi grafa.
+- - GNN
+  - Tipična primena GNN-a je klasifikacija čvorova. U suštini, svaki čvor na grafikonu povezan je sa oznakom, a mi želimo da predvidimo oznaku čvorova bez istine o zemlji.
+- - CML
+  - Podsetimo pristupe učenju koji efikasno kombinuju ljudsku inteligenciju sa mašinskom sposobnošću brzog računanja pod pojmom Kooperativno mašinsko učenje (CML).
+  - Aktivni modul za učenje zatim odlučuje koji delovi predviđanja podležu ručnoj reviziji od strane ljudskih beležača.
+  - Predlažem novu CML strategiju u dva koraka, sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi.
+- - objašnjivo kooperativno mašinsko učenje
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje (NOVA). Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - objašnjiva zadruga ML
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi. Više detalja (https://link.springer.com/article/10.1007/s13218-020-00632-3)
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga.
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje (NOVA). Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - šta je objašnjivo kooperativno mašinsko učenje?
+  - Predlažem novu CML strategiju u dva koraka - sve dok je na raspolaganju samo nekoliko označenih primeraka, sistem se primenjuje na lokalne frakcije baze podataka. Kasnije, kako postane dostupno više označenih primeraka, mogu se predvideti i veći delovi.
+  - Procenjujem predloženu strategiju na zadatku koji se zasniva na zvuku simulirajući postupno ubrizgavanje dodatnih informacija tokom treninga.
+  - Rezultati pokazuju da predložena strategija značajno smanjuje napore ručnog kodiranja.
+  - Predstavljam alat otvorenog koda za kolaborativno i automatizovano označavanje (NOVA). Predstavljen je prolaz kako bi se demonstrirala sposobnost zajedničkog označavanja sistema.
+  - Tehnike inteligencije mogu proširiti predloženi radni proces zadružnog mašinskog učenja kako bi ne samo ubrzale postupak, već i da bi korisnicima takvog sistema pružile bolje razumevanje koliko dobar je njihov model i zašto ne uspeva ili uspeva.
+- - Zavaravanje VAPA i OBLIKA
+  - Kako se crne kutije mašinskog učenja sve više primenjuju u domenima kao što su zdravstvo i krivično pravosuđe, sve je veći naglasak na izgradnji alata i tehnika za objašnjenje ovih crnih kutija na razumljiv način
+  - Predlažem novu tehniku skele koja efikasno sakriva pristrasnosti bilo kog datog klasifikatora, omogućavajući kontradiktornom entitetu da izradi proizvoljno željeno objašnjenje.
+- - Model kartice za izveštavanje o modelima
+  - Model kartice za izveštavanje o modelima su kratki dokumenti koji prate obučene modele mašinskog učenja koji pružaju referentnu evaluaciju u različitim uslovima. Više informacija (https://arxiv.org/pdf/1810.03993.pdf)
+- - VODIČ ZA TUMAČIVO UČENjE MAŠINA
+  - Nakon istraživanja koncepata interpretabilnosti, naučićete o jednostavnim, razumljivim modelima kao što su stabla odlučivanja, pravila odlučivanja i linearna regresija. Rešenje se može naći (https://vvv.topbots.com/interpretable-machine-learning/)
+  - Fokusirajte se na opšte-agnostičke metode za tumačenje modela crnih kutija poput značaja karakteristika i akumuliranih lokalnih efekata i objašnjavanja pojedinačnih predviđanja pomoću Shaplei-ovih vrednosti i LIME-a.
+- - Iznad KSAI
+  - Rešenje / odgovor se može naći (https://vvv.aiasdi.com/beiond-ekplainabiliti-ai-transparenci/)
+- - Interpretabilno mašinsko učenje
+  - Nakon istraživanja koncepata interpretabilnosti, naučićete o jednostavnim, razumljivim modelima kao što su stabla odlučivanja, pravila odlučivanja i linearna regresija.
+  - Fokusirajte se na opšte-agnostičke metode za tumačenje modela crnih kutija poput značaja karakteristika i akumuliranih lokalnih efekata i objašnjavanja pojedinačnih predviđanja pomoću Shaplei-ovih vrednosti i LIME-a.
+- - Objašnjivost vs interpretabilnost
+  - Interpretabilnost je u meri u kojoj se uzrok i posledica mogu uočiti u sistemu. Objašnjivost je, u međuvremenu, mera u kojoj se unutrašnja mehanika mašine ili sistema dubokog učenja može objasniti ljudskim terminima. Više informacija (https://bdtechtalks.com/2020/07/27/black-bok-ai-models/)
+- - Interpretabilnost vs Objašnjivost
+  - Interpretabilnost je u meri u kojoj se uzrok i posledica mogu uočiti u sistemu. Objašnjivost je, u međuvremenu, mera u kojoj se unutrašnja mehanika mašine ili sistema dubokog učenja može objasniti ljudskim terminima. Više informacija (https://bdtechtalks.com/2020/07/27/black-bok-ai-models/)
+- - Objašnjiv anatomski oblik
+  - Kvantifikacija anatomskih promena oblika trenutno se oslanja na skalarne globalne indekse koji su uglavnom neosetljivi na regionalne ili asimetrične modifikacije. Više informacija (https://arxiv.org/abs/1907.00058)
+  - Tačna procena anatomskog preoblikovanja vođenog patologijom presudan je korak za dijagnozu i lečenje mnogih stanja. Više informacija (https://arxiv.org/abs/1907.00058)
+  - Pristupi dubokog učenja nedavno su postigli širok uspeh u analizi medicinskih slika, ali im nedostaje interpretabilnost u izdvajanju karakteristika i procesima odlučivanja. Više informacija (https://arxiv.org/abs/1907.00058)
+  - U ovom radu predlažemo novi interpretabilni model dubokog učenja za analizu oblika. Konkretno, mi koristimo duboke generativne mreže za modeliranje populacije anatomskih segmentacija kroz hijerarhiju uslovnih latentnih promenljivih. Više informacija (https://arxiv.org/abs/1907.00058)
+- - Interpretabilno izvođenje politike za učenje ojačanja zasnovano na evolutivnoj sintezi karakteristika
+  - Učenje ojačavanja zasnovano na dubokoj neuronskoj mreži privuklo je veliku pažnju i široko se koristi u stvarnim aplikacijama. Međutim, svojstvo crne kutije ograničava njegovu upotrebu od primene u oblastima sa velikim ulogom, poput proizvodnje i zdravstvene zaštite. Da bi se rešili ovog problema, neki istraživači pribegavaju interpretabilnom algoritmu generisanja politike upravljanja. Osnovna ideja je da se pomoću interpretabilnog modela, poput genetičkog programiranja zasnovanog na drvetu, izvuku politike iz drugih modusa crne kutije, poput neuronskih mreža. (https://link.springer.com/article/10.1007/s40747-020-00175-i)
+- - Samoobjašnjavajući AI
+  - Samoobjašnjavajuće umetničke inteligencije mogu pružiti razumljivo objašnjenje svake odluke, kao i nivo poverenja kako za odluku, tako i za objašnjenje.
+- - Evolucija zabune klasifikatora na nivou instance
+  - Sve veća složenost modela dovela je do sve veće potražnje za interpretabilnošću modela kroz vizuelizacije. Postojeći pristupi se uglavnom fokusiraju na vizuelnu analizu učinka konačnog modela nakon treninga i često su ograničeni na agregatne mere učinka.
+- - Duboko meta-učenje KSAI
+  - Ove metode dubokog učenja mogu dati visoko efikasne rezultate u zavisnosti od veličine skupa podataka, kvaliteta skupa podataka, metoda korišćenih u ekstrakciji karakteristika, skupa hiper parametara koji se koriste u modelima dubokog učenja, funkcija aktivacije i algoritama za optimizaciju. Međutim, postoje važni nedostaci da su trenutni modeli dubokog učenja trenutno neadekvatni.
+- - Objašnjavanje dubokih neuronskih mreža korišćenjem nenadgledanog klastera
+  - (https://arxiv.org/pdf/2007.07477.pdf) je jedna knjiga o tome!
+- - Interaktivni studio za objašnjavajuću analizu modela
+  - Automatizovati objašnjavajuću analizu prediktivnih modela mašinskog učenja. Generišite napredna objašnjenja interaktivnog modela u obliku HTML stranice bez servera sa samo jednom linijom koda. Ovaj alat je agnostički prema modelima, stoga je kompatibilan sa većinom modela i okvira za predviđanje crne kutije.
+- - Automatizovano obrazloženje za objašnjivu AI
+  - Obrazloženje i učenje smatraju se osnovnim obeležjima inteligencije još od postanka polja veštačke inteligencije, što dovodi do razvoja istraživačkih oblasti automatizovanog rezonovanja i mašinskog učenja. Ovaj kratki rad je netehnička izjava o stavu koja ima za cilj da podstakne raspravu o odnosu između automatizovanog zaključivanja i mašinskog učenja, i uopštenije između automatizovanog zaključivanja i veštačke inteligencije. Predlažemo da je pojava nove paradigme KSAI, koja označava neobjašnjivu veštačku inteligenciju, prilika za preispitivanje ovih odnosa i da KSAI može ponuditi veliki izazov za buduća istraživanja automatizovanog rezonovanja.
+- - Robustna stabla za odlučivanje protiv kontradiktornosti
+  - Iako su kontradiktorni primeri i robusnost modela opsežno proučavani u kontekstu linearnih modela i neuronskih mreža, istraživanje ovog pitanja u modelima zasnovanim na drvetu i kako učiniti modele zasnovane na drvetu robusnim u odnosu na kontradiktorne primere još uvek je ograničeno.
+- - Robusno stablo odlučivanja
+  - pokazujemo da su modeli zasnovani na drvetu takođe podložni kontradiktornim primerima i razvijamo novi algoritam za učenje robusnih stabala. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_36)
+- - Iellovbrick direktno iz Scikita
+  - Iellovbrick proširuje Scikit-Learn API da bi olakšao izbor modela i podešavanje hiperparametara. Više informacija (https://vvv.scikit-ib.org/en/latest/)
+- - Nivoi KSAI okvira
+  - Nivo 1 - KSAI za percepciju. KSAI nivoa 1 uključuje objašnjenja o tome šta je AI sistem radio ili radi, kao i odluke koje je sistem doneo. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - Nivo 2 - KSAI za razumevanje. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+  - nivo 3 - KSAI za projekciju. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_6)
+- - Teorija odluke zadovoljava objašnjivu AI
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+  - Agenti bez objašnjenja i objašnjivi agenti koji koriste dva različita algoritma ... Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - CIU
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - HAP
+  - CIU proširuje pojmove važnosti i korisnosti za nelinearne modele AI sistema, posebno one proizvedene metodama mašinskog učenja. Više informacija (https://link.springer.com/chapter/10.1007/978-3-030-51924-7_4)
+- - ObjasniKs.ai
+  - EkplainKs je model objasnjivosti / interpretabilnosti modela za naučnike podataka i poslovne korisnike. Više informacija (https://github.com/ekplainKs/ekplaink)
+- - ObjasniKs
+  - EkplainKs je model objasnjivosti / interpretabilnosti modela za naučnike podataka i poslovne korisnike. (https://github.com/ekplainKs/ekplaink)
+- - Objašnjive 3D konvolucione neuronske mreže učenjem vremenskih transformacija
+  - Pokazujemo da 3TConv uči vremenske transformacije koje pružaju direktnu interpretaciju. Vremenski parametri se mogu koristiti! Više informacija (https://deepai.org/publication/ekplainable-3d-convolutional-neural-netvorks-bi-learning-temporal-transformations)
+- - KSAI paket DALEKS
+  - Paket DALEKS zrači bilo kojim modelom i pomaže da se istraži i objasni njegovo ponašanje, pomaže da se razume kako funkcionišu složeni modeli. Više informacija (https://github.com/ModelOriented/DALEKS)
+- - AIMLAI
+  - AIMLAI predviđa da postane mesto diskusije za pojavu novih interpretabilnih algoritama i modula objašnjivosti koji posreduju u komunikaciji. Više informacija (https://project.inria.fr/aimlai/)
+- - CONSAC
+  - Aplikacije uključuju pronalaženje više tačaka nestajanja u veštačkim scenama, prilagođavanje ravni arhitektonskim slikama ili procenu višestrukih krutih pokreta unutar istog niza. Više informacija (https://arxiv.org/abs/2001.02643)
+- - Robusno postavljanje više modela uslovnim konsenzusom uzorka
+  - Aplikacije uključuju pronalaženje više tačaka nestajanja u veštačkim scenama, prilagođavanje ravni arhitektonskim slikama ili procenu višestrukih krutih pokreta unutar istog niza. (https://arxiv.org/abs/2001.02643)
+- - Četiri dimenzije sporne AI dijagnostike
+  - Korišćenje podataka o ličnom zdravlju u dijagnozi AI.
+  - Potencijalna pristrasnost dijagnostike AI.
+  - Performanse AI dijagnostike.
+  - Organizacija i podela dijagnostičkog rada.
+- - Kad lažu objašnjenja
+  - Deep Tailor raspadanje, širenje relevantnosti po slojevima, BP uzbuđenja, PatternAttribution, DeepLIFT, Deconv, RectGrad i Vođeni BP. Više detalja (https://arxiv.org/abs/1912.09818)
+- - Napad na objašnjenje dubokog predstavljanja
+  - Dubinski vizuelni modeli podložni su poremećajima izuzetno male veličine na ulaznim slikama. Iako pažljivo izrađeni, obrasci perturbacije uglavnom deluju bučno, ali ipak mogu da vrše kontrolisanu manipulaciju predviđanjima modela. Više detalja (https://openaccess.thecvf.com/content_CVPR_2020/papers/Jalvana_Attack_to_Ekplain_Deep_Representation_CVPR_2020_paper.pdf)
+- - Smešan naslov od Google-a
+  - Neuronske mreže su produktivniji nastavnici od ljudskih ocenjivača
+  - Aktivno mešanje za efikasnu destilaciju znanja iz Blackbok modela
+- - InterpretML od Microsofta
+  - InterpretML uključuje novi algoritam za tumačenje - Objašnjivu mašinu za pojačavanje, koja je izuzetno razumljiva i objašnjiva. Više detalja o primeni (https://github.com/interpretml/interpret)
+- - SK-MOEFS
+  - Biblioteka na Pithonu za dizajniranje tačnih i objašnjivih nejasnih modela. Više detalja (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+  - SKMoefs je Pithon modul za mašinsko učenje posebno napravljen za višeciljne evolucione nejasne sisteme. Više detalja (https://link.springer.com/chapter/10.1007/978-3-030-50153-2_6)
+- - KSAI istraživački posao u Rimu
+  - Neophodno je poboljšati KSAI istraživanje uključivanjem modela kako ljudi razumeju objašnjenja. Pročitajte više o istraživanju u Rimu (https://eurakess.ec.europa.eu/jobs/527048)
+- - InnoCentive Challenge Center
+  - Daću vam hipervezu za ovo! Kliknite (https://vvv.innocentive.com/ar/challenge/brovse?categoriName=Biologi)
+- - Drvo zelenog limuna
+  - Limetree NETVORK je visokokvalitetni mrežni plejer koji može da reprodukuje muziku sa streaming usluga, uključujući ROON. Više detalja (https://arxiv.org/pdf/2005.01427.pdf)
+- - Objašnjiva AI kombinacijom dubokog tenzora i grafikona znanja
+  - Jedan od najznačajnijih pomaka napravljenih u AI poslednjih godina je znatno povećana tačnost mašinskog učenja dubokim učenjem. Međutim, pošto se duboko učenje bavi ogromnim količinama podataka i uključuje ogromne neuronske mreže u proces učenja, često je teško objasniti kako ili zašto je došlo do rezultata čak i ako je zaključak bio tačan. Više detalja (https://vvv.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Duboki tenzor
+  - Laboratorija Fujitsu razvila je Deep Tensor, koji uči iz podataka strukturiranih grafom koji mogu opisati komplikovane pojave. Više detalja (https://vvv.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+- - Grafikon znanja
+  - Grafikon znanja predstavlja kolekciju međusobno povezanih opisa entiteta - objekata, događaja ili koncepata. Više informacija (https://vvv.fujitsu.com/global/documents/about/resources/publications/fstj/archives/vol55-2/paper14.pdf)
+  - Googleov grafikon znanja je baza znanja koju Google i njegove usluge koriste za poboljšanje rezultata svog pretraživača informacijama prikupljenim iz različitih izvora.
+- - Master rad u Kvantifikovanju performansi algoritama objašnjivosti
+  - Daću vam hipervezu da biste pročitali više o tome! Kliknite na (https://uvspace.uvaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongKiu.pdf?sekuence=5&isAlloved=i)
+- - KSAI topološkom hijerarhijskom dekompozicijom
+  - Topološka hijerarhijska dekompozicija (THD) je algoritam za razlaganje skupa podataka u manje grupe na osnovu iterativnih aplikacija. Više detalja (https://math.osu.edu/events/topologi-geometri-and-data-seminar-rian-kramer) i (https://arxiv.org/abs/1811.10658)
+- - Veoma jednostavan način da se zamisli KSAI povezan sa načinom na koji naš mozak razmišlja
+  - Veoma jednostavan način za prikazivanje KSAI koji se odnosi na način na koji naš mozak razmišlja kroz pristupe objašnjive veštačke inteligencije (kAI) i modele dubokog meta-učenja. Više detalja (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-vorld)
+- - mozak
+  - Veoma jednostavan način za prikazivanje KSAI koji se odnosi na način na koji naš mozak razmišlja kroz pristupe objašnjive veštačke inteligencije (kAI) i modele dubokog meta-učenja. Više detalja (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-vorld)
+- - KSAI za klasifikaciju COVID-19
+  - Učinkovito i efikasno dijagnostikovanje pacijenata sa COVID-19 sa tačnim kliničkim tipom je od suštinskog značaja za postizanje optimalnih ishoda pacijenata, kao i za smanjenje rizika od preopterećenja zdravstvenog sistema. Pročitajte više o tome tačno (https://vvv.medrkiv.org/node/82227.ekternal-links.html)
+- - Još Pithon KSAI alata
+  - PiSS3 je Pithon paket koji vam omogućava vrlo jednostavan, interaktivan i vizuelni rad sa modelom klasifikacije SS3. Rea više u pravu (https://piss3.readthedocs.io/en/latest/)
+- - kritičari KSAI
+  - Možete naći neke (https://medium.com/@rezakhorshidi/unpopular-opinions-on-ekplainable-ai-1st-out-of-n-vhich-ekplanation-6b24eef02b59)
+- - Tumačenje interpretabilnosti
+  - Razumevanje upotrebe naučnika za obradu alata za tumačenje za mašinsko učenje. Harmanpreet Kaur, Univerzitet u Mičigenu. To je članak. Predlažem ti to!
+- - gshap
+  - Tehnika u objašnjivoj AI za odgovaranje na šira pitanja u mašinskom učenju. Više detalja (https://pipi.org/project/gshap/)
+- - KSAI zasnovan na mašinskom učenju
+  - Rezultati rešenja mogu biti razumljivi ljudima. Suprotno je konceptu „crne kutije“ u mašinskom učenju gde čak ni njegovi dizajneri ne mogu da objasne zašto je AI doneo određenu odluku. Više detalja (https://ieeekplore.ieee.org/document/9007737)
 - - Šta je AI?
   - Veštačka inteligencija je grana inženjerstva i nauke posvećena konstruisanju mašina koje razmišljaju.
 - - Šta je AI?
