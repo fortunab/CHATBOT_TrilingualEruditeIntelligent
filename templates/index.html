@@ -240,15 +240,12 @@ tr:nth-child(even) {
       <div id="userInput">
           <div id="textInput_id">
             <input id="textInput" type="text" name="msg" style="background-color: gold" align="center" style="margin-top: 30px"
-                   placeholder="Message">
+                   placeholder="Message"> <button id="btn_2consMess" onclick="numele()">Send</button>
           </div>
-          <div id="botText1">
-            <button id="btn_2consMess" onclick="numele()">Send</button>
-          </div>
+
       </div>
 
         <div id="botText_n1"></div>
-
         <div id="userInput2"></div>
         <div id="userInput3"></div>
         <div id="userInput4"></div>
@@ -256,8 +253,23 @@ tr:nth-child(even) {
         <div id="userInput6"></div>
 
 
-      <script>
+        <script>
+            var input = document.getElementById("userInput");
+            input.addEventListener("keyup", function(event) {
+              var integ = 13;
+              if (event.keyCode === integ) {
+               event.preventDefault();
+               document.getElementById("btn_2consMess").click();
+              }
+            });
+        </script>
 
+
+
+
+
+
+      <script>
         function numele() {
             var datatimp = new Date();
           var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
@@ -290,14 +302,14 @@ tr:nth-child(even) {
               else {
                   div1.style.display = "none";
               }
-          var div1 = document.getElementById("botText1");
+          /*var div1 = document.getElementById("botText1");
           div1.style.display = "block";
               if (div1.style.display !== "block") {
                   div1.style.display = "block";
               }
               else {
                   div1.style.display = "none";
-              }
+              }*/
 
         }
       </script>
@@ -344,6 +356,7 @@ tr:nth-child(even) {
               else {
                   div1.style.display = "none";
               }
+
 
         }
 
@@ -396,8 +409,10 @@ tr:nth-child(even) {
                   div1.style.display = "none";
               }
 
-          var btnref = '<button onclick="ref1()">Send</button>';
-          $("#botText_n1").append(btnref);
+          document.getElementById('btn_2consMess').setAttribute('onclick','ref1()');
+
+          /*var btnref = '<button onclick="ref1()">Send</button>';
+          $("#botText_n1").append(btnref);*/
 
         }
 
@@ -448,9 +463,9 @@ tr:nth-child(even) {
               else {
                   div1.style.display = "block";
               }
-
-            var noubtn = '<button onclick="discutie()">Send</button>';
-            $("#userInput3").append(noubtn);
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button id="noubtn" onclick="discutie()">Send</button>';
+            $("#userInput3").append(noubtn);*/
         }
 
         function conv2() {
@@ -501,8 +516,9 @@ tr:nth-child(even) {
                   div1.style.display = "block";
               }
 
-            var noubtn = '<button onclick="discutie()">Send</button>';
-            $("#userInput3").append(noubtn);
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button onclick="discutie()">Send</button>';
+            $("#userInput3").append(noubtn);*/
         }
 
         function conv3() {
@@ -552,9 +568,9 @@ tr:nth-child(even) {
               else {
                   div1.style.display = "block";
               }
-
-            var noubtn = '<button onclick="discutie()">Send</button>';
-            $("#userInput3").append(noubtn);
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie()');
+            /*var noubtn = '<button onclick="discutie()">Send</button>';
+            $("#userInput3").append(noubtn);*/
         }
 
         function discutie() {
@@ -571,8 +587,9 @@ tr:nth-child(even) {
                 setTimeout(function() {
                     $('#messages10a').html('XAIBOT: ' + data);
                     if(rawText.toLowerCase().localeCompare("yes")!=0){
-                    var noubtn_da = '<button onclick="decizie_finala()">Send</button>';
-                    $("#userInput4").append(noubtn_da);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','decizie_finala()');
+                    /*var noubtn_da = '<button id="noubtn_da" onclick="decizie_finala()">Send</button>';
+                    $("#userInput4").append(noubtn_da);*/
 
                     var div1 = document.getElementById("userInput3");
                     div1.style.display = "block";
@@ -592,9 +609,9 @@ tr:nth-child(even) {
                       else {
                           div1.style.display = "block";
                       }
-
-                    var noubtnn = '<button onclick="discutie_noua()">Send</button>';
-                    $("#userInput6").append(noubtnn);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_noua()');
+                    /*var noubtnn = '<button id="noubtnn" onclick="discutie_noua()">Send</button>';
+                    $("#userInput6").append(noubtnn);*/
                 }
                 }, 500);
 
@@ -659,11 +676,21 @@ tr:nth-child(even) {
 
                     }, 2000);
                     $("#chatbox").append(botHtml);
-                    var noubtnn = '<button onclick="discutie_noua()">Send</button>';
-                    $("#userInput6").append(noubtnn);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_noua()');
+                    /*var noubtnn = '<button id="noubtnn" onclick="discutie_noua()">Send</button>';
+                    $("#userInput6").append(noubtnn);*/
                 });
             }
         }
+/*
+        var input = document.getElementById("userInput");
+        input.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+           event.preventDefault();
+           document.getElementById("noubtnn").click();
+          }
+        });
+*/
 
         function decizie_finala2() {
              var datatimp = new Date();
@@ -724,8 +751,9 @@ tr:nth-child(even) {
 
                     }, 4000);
                     $("#chatbox").append(botHtml);
-                    var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
-                    $("#userInput5").append(noubtnn);
+                    document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+                    /*var noubtnn = '<button id="noubtnn" onclick="discutie_ref1()">Send</button>';
+                    $("#userInput5").append(noubtnn);*/
                 });
             }
         }
@@ -779,8 +807,9 @@ tr:nth-child(even) {
             });
 
             if(rawText.toLowerCase().localeCompare("yes")!=0){
-                var noubtn_da = '<button onclick="decizie_finala2()">Send</button>';
-                $("#userInput4").append(noubtn_da);
+                document.getElementById('btn_2consMess').setAttribute('onclick','decizie_finala2()');
+                /*var noubtn_da = '<button onclick="decizie_finala2()">Send</button>';
+                $("#userInput4").append(noubtn_da);*/
 
                 var div1 = document.getElementById("botText_n1");
                 div1.style.display = "block";
@@ -800,9 +829,9 @@ tr:nth-child(even) {
                   else {
                       div1.style.display = "block";
                   }
-
-                var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
-                $("#userInput5").append(noubtnn);
+                document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+                /*var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
+                $("#userInput5").append(noubtnn);*/
             }
         }
 
@@ -828,9 +857,9 @@ tr:nth-child(even) {
                   else {
                       div1.style.display = "block";
                   }
-
-            var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
-            $("#userInput6").append(noubtnn);
+            document.getElementById('btn_2consMess').setAttribute('onclick','discutie_ref1()');
+            /*var noubtnn = '<button onclick="discutie_ref1()">Send</button>';
+            $("#userInput6").append(noubtnn);*/
             if (rawText.toLowerCase().localeCompare("q")==0){
 
                 var div1 = document.getElementById("userInput5");
