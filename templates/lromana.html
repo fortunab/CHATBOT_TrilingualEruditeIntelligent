@@ -278,10 +278,17 @@ tr:nth-child(even) {
             //$('#messages1').html();
             setTimeout(function() {
                 $('#messages1').html('XAIBOT: ' + data);
-                var btn1 = '<button id="botText2" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune1" onclick="versiune1()">Despre XAI și cunoștințele tale. </button>';
-                  var btn2 = '<button id="botText3" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune2" onclick="versiune2()">Aș dori să-mi detectezi câteva referințe </button>';
-                  $("#userInput2").append(btn1);
-                  $("#userInput2").append(btn2);
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbot.ico" width="40" height="30"> <span id="messages21">' + 'XAIBOT tastează...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages21').html('XAIBOT: Aș dori să te întreb cu ce te ocupi?');
+                    var btn1 = '<button id="botText4" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune3" onclick="conv1()">Sunt student. </button>';
+                      var btn2 = '<button id="botText5" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune4" onclick="conv2()">Lucrez. </button>';
+                      var btn3 = '<button id="botText6" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune5" onclick="conv3()">Sunt freelancer. </button>';
+                      $("#userInput2").append(btn1);
+                      $("#userInput2").append(btn2);
+                      $("#userInput2").append(btn3);
+               }, 500);
             }, 500);
 
             $("#chatbox").append(botHtml);
@@ -312,8 +319,8 @@ tr:nth-child(even) {
              var datatimp = new Date();
           var variab = '<p class="dateText"><span>' + datatimp + '</span></p>';
           $("#chatbox").append(variab);
-          var rawText1 = "Despre XAI și cunoștințele tale.";
-          var userHtml = '<p class="userText"><span>' + 'TU: ' + rawText1 ;
+          /*var rawText1 = "Despre XAI și cunoștințele tale.";
+          var userHtml = '<p class="userText"><span>' + 'TU: ' + rawText1 ;*/
           $("#textInput").val("");
           $("#chatbox").append(userHtml);
 
@@ -343,6 +350,15 @@ tr:nth-child(even) {
                   div1.style.display = "none";
               }
           var div1 = document.getElementById("botText3");
+          div1.style.display = "block";
+              if (div1.style.display !== "block") {
+                  div1.style.display = "block";
+              }
+              else {
+                  div1.style.display = "none";
+              }
+
+              var div1 = document.getElementById("textInput_id");
           div1.style.display = "block";
               if (div1.style.display !== "block") {
                   div1.style.display = "block";

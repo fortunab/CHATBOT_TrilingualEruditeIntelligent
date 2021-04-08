@@ -279,10 +279,17 @@ tr:nth-child(even) {
             //$('#messages1').html();
             setTimeout(function() {
                 $('#messages1').html('KSAJBOT: ' + data);
-                var btn1 = '<button id="botText2" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune1" onclick="versiune1()">O KSAJ-u i o tvom znanju, razumu. </button>';
-                  var btn2 = '<button id="botText3" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune2" onclick="versiune2()">Želim da detektuješ spoljašnje veze za unešeni tekst. </button>';
-                  $("#userInput2").append(btn1);
-                  $("#userInput2").append(btn2);
+                var add = '<div class="botText"><p class="botText"><img src="static/media/chatbot.ico" width="40" height="30"> <span id="messages21">' + 'KSAJBOT kuca...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages21').html('KSAJBOT: Dozvolite me da Vas pitam, cime se bavite?');
+                    var btn1 = '<button id="botText4" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune3" onclick="conv1()">Studiram. </button>';
+                      var btn2 = '<button id="botText5" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune4" onclick="conv2()">Zaposlen sam. </button>';
+                      var btn3 = '<button id="botText6" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:indigo\' value="Optiune5" onclick="conv3()">Radim kao frilenser. </button>';
+                      $("#userInput2").append(btn1);
+                      $("#userInput2").append(btn2);
+                      $("#userInput2").append(btn3);
+               }, 500);
             }, 500);
 
             $("#chatbox").append(botHtml);

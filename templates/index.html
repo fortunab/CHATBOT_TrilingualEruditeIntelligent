@@ -264,11 +264,6 @@ tr:nth-child(even) {
             });
         </script>
 
-
-
-
-
-
       <script>
         function numele() {
             var datatimp = new Date();
@@ -284,10 +279,17 @@ tr:nth-child(even) {
             //$('#messages1').html();
             setTimeout(function() {
                 $('#messages1').html('XAIBOT: ' + data);
-                var btn1 = '<button id="botText2" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune1" onclick="versiune1()">About XAI and your sapiens. </button>';
-                  var btn2 = '<button id="botText3" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune2" onclick="versiune2()">I want you to detect references. </button>';
-                  $("#userInput2").append(btn1);
-                  $("#userInput2").append(btn2);
+                    var add = '<div class="botText"><p class="botText"><img src="static/media/chatbot.ico" width="40" height="30"> <span id="messages21">' + 'XAIBOT is typing...' + '</span></p></div>';
+                $('#chatbox').append(add);
+                setTimeout(function () {
+                    $('#messages21').html('XAIBOT: Let me ask you, how do you do?');
+                    var btn1 = '<button id="botText4" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune3" onclick="conv1()">I am a student. </button>';
+                      var btn2 = '<button id="botText5" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune4" onclick="conv2()">I work for a company/ in institution. </button>';
+                      var btn3 = '<button id="botText6" class=\'fas fa-comment-alt\' style=\'font-size:20px;color:blue\' value="Optiune5" onclick="conv3()">I am a freelancer. </button>';
+                      $("#userInput2").append(btn1);
+                      $("#userInput2").append(btn2);
+                      $("#userInput2").append(btn3);
+               }, 500);
             }, 500);
 
             $("#chatbox").append(botHtml);
