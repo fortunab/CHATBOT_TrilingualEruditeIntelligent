@@ -3,8 +3,7 @@ import chatterREFro
 
 
 def nume(text):
-    discutie = 'Îmi pare bine să te cunosc, ' + text + '. Acum că ne cunoaștem, îți voi prezenta abilitățile mele. ' \
-                                                       'Îți propun două fluxuri. Tu despre ce dorești să discutăm?'
+    discutie = 'Îmi pare bine să te cunosc, ' + text + '. Acum că ne cunoaștem, îți voi prezenta abilitățile mele.'
     return discutie
 
 def convorbireIT(userText):

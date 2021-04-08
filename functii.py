@@ -1,7 +1,7 @@
 import chatterREF
 
 def nume(text):
-    discutie = 'Nice to meet you, ' + text + '. I will present you my skills. What do you want to talk about?'
+    discutie = 'Nice to meet you, ' + text + '. I will present you my skills.'
     return discutie
 
 def convorbireIT(userText):

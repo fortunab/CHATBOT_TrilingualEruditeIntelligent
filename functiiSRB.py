@@ -3,8 +3,7 @@ import chatterREFsrb
 
 def nume(text):
     discutie = 'Drago mi je što se upoznajemo! ' + text + ', sjajno! U ovoj sesiji ću Vam pokazati svoje sposobnosti. ' \
-                                                          'Iskreno se nadam da ćemo naučiti ponešto jedno od drugog. ' \
-                                        'Nudim Vam dve opcije. Šta ćete odabrati?'
+                                                          'Iskreno se nadam da ćemo naučiti ponešto jedno od drugog. '
     return discutie
 
 def convorbireIT(userText):
