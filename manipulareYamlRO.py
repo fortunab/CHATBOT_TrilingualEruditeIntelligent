@@ -28,6 +28,9 @@ def convorbireXAI(mesaj):
             if i[0].lower().find(mesaj.lower()) != -1 or mesaj.lower().find(i[0].lower()) == 0:
                 l.append(i[1])
     if l == []:
+        xai_list['conversations'].append("Sunt antrenat să vorbesc despre AI")
+        xai_list['conversations'].append("Vorbim despre AI aici")
+        xai_list['conversations'].append("Sunteți siguri de asta?")
         solu = xai_list['conversations'][random.randint(0, len(xai_list['conversations']))][1]
         return findvrc(solu)
     else:

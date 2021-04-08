@@ -198,7 +198,7 @@ conversations:
 - - Model Cards for Model Reporting
   - Cardurile model pentru raportarea modelului sunt documente scurte care însoțesc modele de învățare automată instruite care oferă evaluări comparative într-o varietate de condiții. Mai multe informații (https://arxiv.org/pdf/1810.03993.pdf)
 - - Ce este XAI?
-  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI (XAI) propune crearea unei suită de tehnici pentru învățarea automată.
+  - Pentru a evita limitarea eficienței generației actuale de sisteme AI, eXplainable AI propune crearea unei suită de tehnici pentru învățarea automată.
 - - LIME
   - LIME este model-agnostic, ceea ce înseamnă că poate fi aplicat oricărui model de învățare automată. Mai multe detalii (https://arxiv.org/abs/1911.02508)
   - Abordările specifice modelului vizează înțelegerea modelului de învățare automată a modelului negru, analizând componentele interne și modul în care acestea interacționează. Mai multe detalii (https://arxiv.org/abs/1911.02508)
@@ -357,11 +357,11 @@ conversations:
 - - Master thesis in Quantifying the Performance of Explainability Algorithms
   - Vă voi oferi un hyperlink pentru a citi mai multe despre acesta! Vă rugăm să faceți clic pe (https://uwspace.uwaterloo.ca/bitstream/handle/10012/15922/Lin_ZhongQiu.pdf?sequence=5&isAllowed=y)
 - - XAI by Topological Hierarchical Decomposition
-  - O descompunere ierarhică topologică (THD) este un algoritm pentru descompunerea unui set de date în grupuri mai mici pe baza aplicațiilor iterative. Mai multe detalii (https://math.osu.edu/events/topology-geometry-and-data-seminar-ryan-kramer) și (https://arxiv.org/abs/1811.10658)
+  - O descompunere ierarhică topologică este un algoritm pentru descompunerea unui set de date în grupuri mai mici pe baza aplicațiilor iterative. Mai multe detalii (https://math.osu.edu/events/topology-geometry-and-data-seminar-ryan-kramer) și (https://arxiv.org/abs/1811.10658)
 - - Un mod foarte simplu de a imagina XAI legat de modul în care gândește creierul nostru
-  - Un mod foarte simplu de a imagina XAI legat de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile (xAI) și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+  - Un mod foarte simplu de a imagina XAI legat de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
 - - creier
-  - O manieră foarte simplă de a imagina XAI legată de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile (xAI) și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
+  - O manieră foarte simplă de a imagina XAI legată de modul în care creierul nostru gândește prin abordări ale inteligenței artificiale explicabile și modele de meta-învățare profundă. Mai multe detalii (https://hbr.org/2017/05/linear-thinking-in-a-nonlinear-world)
 - - XAI for COVID-19 classification
   - Diagnosticarea eficientă și eficientă a pacienților cu COVID-19 cu tip clinic precis este esențială pentru a obține rezultate optime ale pacienților, precum și pentru a reduce riscul de supraîncărcare a sistemului de sănătate. Citiți mai multe despre asta corect (https://www.medrxiv.org/node/82227.external-links.html)
 - - Mai multe instrumente Python XAI
