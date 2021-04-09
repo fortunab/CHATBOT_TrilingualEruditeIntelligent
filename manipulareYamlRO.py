@@ -16,8 +16,8 @@ def findvrc(vrc):
         return vrc
     else:
         vrc = vrc.replace("(", "<a href=\'")
-        vrc = vrc.replace(")", "\'>aici</a>")
-        print(vrc)
+        vrc = vrc.replace(")", "\'>aici<//a>")
+        #print(vrc)
         return vrc
 
 def convorbireXAI(mesaj):
@@ -35,6 +35,5 @@ def convorbireXAI(mesaj):
         return findvrc(solu)
     else:
         vrc = random.choice(l)
-        sol = findvrc(vrc)
-        return sol
+        return findvrc(vrc)
 
