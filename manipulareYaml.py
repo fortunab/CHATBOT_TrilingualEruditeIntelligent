@@ -7,7 +7,7 @@ def findvrc(vrc):
         return vrc
     else:
         vrc = vrc.replace("(", "<a href=\'")
-        vrc = vrc.replace(")", "\'>here<//a>")
+        vrc = vrc.replace(")", "\' target='_blank'>here<//a>")
         #print(vrc)
         return vrc
 
