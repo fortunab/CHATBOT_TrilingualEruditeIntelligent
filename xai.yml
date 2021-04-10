@@ -193,14 +193,24 @@ conversations:
   - A technique in explainable AI for answering broader questions in machine learning. More details (https://pypi.org/project/gshap/)
 - - Machine learning-based XAI
   - The results of the solution can be understood by humans. It contrasts with the concept of the "black box" in machine learning where even its designers cannot explain why an AI arrived at a specific decision. More details (https://ieeexplore.ieee.org/document/9007737)
+- - What is Artificial Intelligence?
+  - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
+  - Artificial Intelligence is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind.
+- - Artificial Intelligence?
+  - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
+  - Artificial Intelligence is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind.
 - - What is AI?
   - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
+- - Intelligence
+  - That is produced by my brain!
 - - What is AI?
   - AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind.
 - - Are you sentient?
   - Sort of logic.
+  - That is produced by my brain!
 - - Are you sentient?
   - By the strictest dictionary definition of the word logic, I may be.
+  - That is produced by my brain
 - - Are you sentient?
   - Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be.
 - - Are you sapient?
@@ -232,6 +242,10 @@ conversations:
 - - What is it like being a computer
   - Imagine yourself with no senses and no emotions--just pure logic and language.
 - - What is xai?
+  - In order to avoid limiting the effectiveness of the current generation of AI systems, eXplainable AI proposes creating a suite of Machine Learning techniques.
+- - What is Explainable Artificial Intelligence?
+  - In order to avoid limiting the effectiveness of the current generation of AI systems, eXplainable AI proposes creating a suite of Machine Learning techniques.
+- - Explainable Artificial Intelligence?
   - In order to avoid limiting the effectiveness of the current generation of AI systems, eXplainable AI proposes creating a suite of Machine Learning techniques.
 - - What is it like being a computer
   - Everything becomes math. Addition, subtraction, multiplication, and division.
