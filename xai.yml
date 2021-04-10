@@ -107,7 +107,7 @@ conversations:
 - - Deep meta-learning XAI
   - These deep learning methods can yield highly effective results according to the data set size, data set quality, the methods used in feature extraction, the hyper parameter set used in deep learning models, the activation functions, and the optimization algorithms. However, there are important shortcomings that current deep learning models are currently inadequate.
 - - Explaining Deep Neural Networks using Unsupervised Clustering
-  - (https://arxiv.org/pdf/2007.07477.pdf) is one book about it!
+  - One book about it can be accessed (https://arxiv.org/pdf/2007.07477.pdf)
 - - Interactive Studio for Explanatory Model Analysis
   - Automate the explanatory analysis of machine learning predictive models. Generate advanced interactive model explanations in the form of a serverless HTML site with only one line of code. This tool is model agnostic, therefore compatible with most of the black box predictive models and frameworks.
 - - Automated Reasoning for Explainable AI

@@ -103,7 +103,7 @@ conversations:
 - - Duboko meta-učenje XAI
   - Ove metode dubokog učenja mogu dati visoko efikasne rezultate u zavisnosti od veličine skupa podataka, kvaliteta skupa podataka, metoda korišćenih u ekstrakciji karakteristika, skupa hiper parametara koji se koriste u modelima dubokog učenja, funkcija aktivacije i algoritama za optimizaciju. Međutim, postoje važni nedostaci da su trenutni modeli dubokog učenja trenutno neadekvatni.
 - - Objašnjavanje dubokih neuronskih mreža korišćenjem nenadgledanog klastera
-  - (https://arxiv.org/pdf/2007.07477.pdf) je jedna knjiga o tome!
+  - Knjiga koju bih Vam preložio se nalazi (https://arxiv.org/pdf/2007.07477.pdf)
 - - Interaktivni studio za objašnjavajuću analizu modela
   - Automatizovati objašnjavajuću analizu prediktivnih modela mašinskog učenja. Generišite napredna objašnjenja interaktivnog modela u obliku HTML stranice bez servera sa samo jednom linijom koda. Ovaj alat je agnostički prema modelima, stoga je kompatibilan sa većinom modela i okvira za predviđanje crne kutije.
 - - Automatizovano obrazloženje za objašnjivu AI

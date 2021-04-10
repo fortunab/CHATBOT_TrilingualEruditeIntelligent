@@ -111,7 +111,7 @@ conversations:
 - - Meta-learning profund XAI
   - Aceste metode de învățare profundă pot produce rezultate extrem de eficiente în funcție de dimensiunea setului de date, calitatea setului de date, metodele utilizate în extragerea caracteristicilor, setul de hiperparametri utilizat în modelele de învățare profundă, funcțiile de activare și algoritmii de optimizare. Cu toate acestea, există deficiențe importante că modelele actuale de învățare profundă sunt în prezent inadecvate.
 - - Explicarea rețelelor neuronale profunde folosind clusterizarea nesupravegheată
-  - (https://arxiv.org/pdf/2007.07477.pdf) este o carte despre asta!
+  - O carte pe care v-o recomand se găsește (https://arxiv.org/pdf/2007.07477.pdf)
 - - Studio interactiv pentru analiza modelului explicativ
   - Automatizarea analizei explicative a modelelor predictive de învățare automată. Generați explicații de model interactiv avansat sub forma unui site HTML fără server, cu o singură linie de cod. Acest instrument este model agnostic, prin urmare compatibil cu majoritatea modelelor și cadrelor predictive ale cutiei negre.
 - - Raționament automat pentru AI explicabilă

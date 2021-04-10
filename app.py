@@ -19,7 +19,7 @@ def corpusul():
 
 # -------------------- ENGLISH CHATBOT ----------------------
 
-@app.route("/detectare")
+@app.route("/detectare", methods=["GET"])
 def detect_referinte():
     userText = request.args.get('msg')
     if userText.lower() == "q":
@@ -137,7 +137,7 @@ def odgovor_bota():
     userText = request.args.get('msg')
     if userText.lower() == "exit":
         return 'Videli ste i sami kako funkcionišu stvari. ' \
-               'Upravo smo završili konveryaciju u kojoj smo pokazali da uistinu jesmo erudite. Bio je to jedan pomalo i čudan razgovor između tebe, čoveka, i mene, bota. ' \
+               'Upravo smo završili konverzaciju u kojoj smo pokazali da uistinu jesmo erudite. Bio je to jedan pomalo i čudan razgovor između tebe, čoveka, i mene, bota. ' \
                'Ipak, drago mi je da smo se upoznali. ' \
                'Moram Vam reći da ću Vas pitati i naredni put za nadimak, jer slabo pamtim ljude sa kojima razgovaram jer ih ne vidim. ' \
                'Stoga, želim Vam sve najbolje i nadam se da ćeš ponovo da posetiš aplikaciju. ' \
